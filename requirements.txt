@@ -4,3 +4,6 @@ djangorestframework-simplejwt>=5.2.2
 psycopg2-binary>=2.9.9
 drf-yasg>=1.21.7
 redis>=5.0.0
+pytest
+pytest-django
+pytest-factorybo÷

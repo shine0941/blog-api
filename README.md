@@ -66,7 +66,7 @@ python manage.py runserver
 blog-api/
 ├── blog/               # 文章相關功能
 ├── users/              # 使用者註冊、登入
-├── blog_api/           # 專案主設定
+├── blog_project/           # 專案主設定
 ├── requirements.txt
 ├── manage.py
 └── README.md
