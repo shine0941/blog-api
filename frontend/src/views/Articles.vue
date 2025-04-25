@@ -1,18 +1,17 @@
 <template>
-  <div>
-    <h2>文章列表</h2>
-    <div>login</div>
-    <v-btn icon>
-      <v-icon>mdi-account</v-icon>
-    </v-btn>
-    <v-icon>mdi-home</v-icon>
-
-    <ul>
-      <li v-for="a in articles" :key="a.id">
-        {{ a.title }}
-      </li>
-    </ul>
-  </div>
+  <v-app>
+    
+    <v-main>
+      <v-container>
+        <h2>文章列表</h2>        
+        <ul>
+          <li v-for="a in articles" :key="a.id">
+            {{ a.title }}
+          </li>
+        </ul>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>

@@ -24,6 +24,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
+import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -33,4 +34,9 @@ export default defineConfig({
       autoImport: true, // 這個打開才會自動註冊 <v-icon>、<v-btn> 等組件
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })

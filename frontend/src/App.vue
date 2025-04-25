@@ -1,11 +1,21 @@
 <template>
-  <router-view />
+  <v-app>
+    <AppToolBar />
+    <v-container>
+      <router-view />
+    </v-container>
+    <AppFooter />
+  </v-app>
 </template>
 
-<script>
+<script >
 export default {
   name: 'App'
 }
+</script>
+<script setup>
+import AppToolBar from './components/AppToolBar.vue'
+import AppFooter from './components/AppFooter.vue'
 </script>
 
 <!-- <template>
